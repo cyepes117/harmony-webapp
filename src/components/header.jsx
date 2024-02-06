@@ -17,8 +17,8 @@ export const Header = (props) => {
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Learn More
-                </a>{" "}
+                  {props.data ? props.data.cta : "Loading"}
+                </a>
               </div>
             </div>
           </div>
