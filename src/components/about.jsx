@@ -14,7 +14,7 @@ export const About = (props) => {
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
               <a
                   href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
+                  className="btn btn-secondary btn-custom btn-lg page-scroll"
                 >
                   {props.data ? props.data.cta : "Loading"}
                 </a>
