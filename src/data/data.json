@@ -6,52 +6,52 @@
   },
   "About": {
     "title": "Conoce mas sobre mí",
-    "paragraph": "Hola, soy Catalina, psicóloga enfocada en el bienestar de la mente a través de diversas herramientas. Puedo ayudarte a superar tus adversidades, reencontrarte con tu ser y recuperar la tranquilidad./n/n Juntos podemos encontrar el equilibrio en tu vida!",
+    "paragraph": "Hola, soy Catalina, psicóloga comprometida con el bienestar mental y el desarrollo personal a través de diversas herramientas psicológicas. Mi objetivo es ayudarte a superar tus adversidades, reconectar contigo mismo y recuperar la tranquilidad que mereces. Juntos, podemos explorar y encontrar el equilibrio en tu vida, utilizando enfoques basados en la psicología cognitiva para promover un cambio positivo y duradero. ¡Estoy aquí para acompañarte en este viaje hacia el bienestar emocional y mental!",
     "cta": "Contáctame"
   },
   "Services": {
-    "title": "Estás afrontando una situación difícil?",
+    "title": "¿Estás afrontando una situación difícil?",
     "paragraph": "Estos son los servicios para ayudarte en tu bienestar.",
     "value": [
       {
         "icon": "fa fa-wordpress",
         "name": "Estrés",
-        "text": "El estrés ya no será un problema en tu vida. Este enemigo que parece silencioso, afecta tu vida más de lo que crees. Te daré herramientas para tratarlo y poder seguir con tranquilidad tu vida."
+        "text": "Este enemigo, que parece silencioso, ejerce un impacto significativo en tu vida, más allá de lo que puedas percibir. Te proporcionaré herramientas para gestionarlo y encontrar un equilibrio en tu vida."
       },
       {
         "icon": "fa fa-cart-arrow-down",
         "name": "Duelo",
-        "text": "El duelo es una situación difícil que requiere de valentía para enfrentarla. Podemos encontrar la forma en la que puedas afrontar el duelo, crecer y aprender durante el proces. No estás solo!"
+        "text": "El duelo es una experiencia desafiante que todos enfrentamos en algún momento de nuestras vidas. Podemos descubrir juntos cómo afrontarlo, crecer y aprender a lo largo del proceso. Recuerda, no estás solo en este camino."
       },
       {
         "icon": "fa fa-cloud-download",
         "name": "Depresión",
-        "text": "No te sientas culpable por sentirte con depresión, no invalides tus emociones y afrontalas. En Puramente te ayudaremos a salir de ese momento difícil."
+        "text": "La depresión es más común de lo que podrías imaginar, y es importante no minimizar tus emociones. En Puramente, te apoyaremos para enfrentarlas con respeto y comprensión. Lo fundamental es confrontarlas y trabajar en tu bienestar emocional."
       },
       {
         "icon": "fa fa-language",
         "name": "Ansiedad",
-        "text": "Escucha las sensaciones de tu cuerpo y aprende a tratarlas. La ansiedad es un problema común, hazle caso a tus emociones y aborda el problema con profesionales."
+        "text": "Conecta con tus emociones y aprende a manejarlas. La ansiedad es una experiencia habitual, y es esencial prestar atención a estas señales y abordar la situación con la ayuda de profesionales capacitados."
       },
       {
         "icon": "fa fa-plane",
         "name": "Transtorno de ansiedad (fobia social)",
-        "text": "En Puramente, comprendemos lo desafiante que puede ser el transtorno de ansiedad social. Nuestra psicóloga, Catalina Fernández, ofrece un enfoque compasivo y efectivo para abordar este problema."
+        "text": "En Puramente, entendemos lo desafiante que puede resultar el trastorno de ansiedad social. Nuestra psicóloga, Catalina Fernández, ofrece un enfoque compasivo y efectivo para abordar esta dificultad."
       },
       {
         "icon": "fa fa-pie-chart",
         "name": "Transtorno de estrés postraumático",
-        "text": "Te ofrecemos un enfoque terapéutico especializado para abordar este trastorno. A través de terapias personalizadas y técnicas de manejo del trauma."
+        "text": "Te proporcionamos un enfoque terapéutico especializado para enfrentar este trastorno. A través de terapias personalizadas y técnicas de manejo del trauma, trabajaremos juntos para superar esta situación."
       },
       {
         "icon": "fa fa-pie-chart",
         "name": "Dependencia emocional",
-        "text": "La dependencia emocional puede ser una carga que limita tu felicidad y autonomía. En Puramente, te brindamos apoyo y herramientas para liberarte de la dependencia y construir relaciones más saludables."
+        "text": "La dependencia emocional puede convertirse en una carga que afecta tu felicidad y autonomía. En Puramente, te ofrecemos apoyo y herramientas para liberarte de esta dependencia y cultivar relaciones más saludables."
       },
       {
         "icon": "fa fa-pie-chart",
         "name": "Transtorno de adaptación",
-        "text": "Te ofrecemos orientación y estrategias para enfrentar los cambios de manera positiva y construir una vida más equilibrada."
+        "text": "Te brindamos orientación y estrategias para afrontar los cambios de manera positiva y construir una vida más equilibrada. En Puramente, estamos aquí para ayudarte en este proceso de transformación."
       }
     ]
   },
