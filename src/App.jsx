@@ -19,13 +19,19 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
 
+  const goToPage = () => {
+    const encodedMessage = encodeURIComponent(JsonData.Whatsapp.message);
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${JsonData.Whatsapp.phone}&text=${encodedMessage}`;
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
     <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <About data={landingPageData.About} />
+      <Navigation goToPage={goToPage} />
+      <Header data={landingPageData.Header} goToPage={goToPage} />
+      <About data={landingPageData.About} goToPage={goToPage} />
       <Services data={landingPageData.Services} />
-      <Contact data={landingPageData.Contact} />
+      <Contact data={landingPageData.Contact} goToPage={goToPage} />
     </div>
   );
 };

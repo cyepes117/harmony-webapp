@@ -1,15 +1,14 @@
 import React from "react";
 
 export const About = (props) => {
-  const { title, paragraph, cta } = props.data || {};
+  const { data, goToPage } = props;
 
-  // Check if props.data is available and not null
   if (!props.data) {
     return <div>Loading...</div>;
   }
 
   // Replace newline characters ('\n') with JSX line breaks (<br />)
-  const parsedParagraph = paragraph.split("\n").map((line, index) => (
+  const parsedParagraph = data.paragraph.split("\n").map((line, index) => (
     <React.Fragment key={index}>
       {line}
       <br />
@@ -27,14 +26,15 @@ export const About = (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>{title}</h2>
+              <h2>{data ? data.title : "Loading"}</h2>
               {/* Render the parsed paragraph with JSX line breaks */}
               <p>{parsedParagraph}</p>
               <a
-                href="#features"
+                href="#about"
                 className="btn btn-secondary btn-custom btn-lg page-scroll"
+                onClick={() => goToPage()}
               >
-                {cta}
+                {data ? data.cta : "Loading"}
               </a>
             </div>
           </div>

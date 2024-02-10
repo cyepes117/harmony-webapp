@@ -1,6 +1,7 @@
 import React from "react";
 
 export const Navigation = (props) => {
+  const { goToPage } = props;
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -42,7 +43,11 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="btn btn-primary btn-custom btn-lg page-scroll">
+              <a
+                href="#menu"
+                className="btn btn-primary btn-custom btn-lg page-scroll"
+                onClick={() => goToPage()}
+              >
                 Agenda una cita
               </a>
             </li>

@@ -1,21 +1,23 @@
 import React from "react";
 
 export const Header = (props) => {
+  const { data, goToPage } = props;
   return (
-    <header id="header">
+    <header id="home">
       <div className="intro">
         <div className="overlay">
           <div className="container">
             <div className="row intro-content">
               <div className="col-xs-12 col-md-6">
                 <div className="intro-text">
-                  <h1>{props.data ? props.data.title : "loading..."}</h1>
-                  <p>{props.data ? props.data.paragraph : "loading..."}</p>
+                  <h1>{data ? data.title : "loading..."}</h1>
+                  <p>{data ? data.paragraph : "loading..."}</p>
                   <a
-                    href="#features"
+                    href="#home"
                     className="btn btn-custom btn-lg page-scroll"
+                    onClick={() => goToPage()}
                   >
-                    {props.data ? props.data.cta : "Loading"}
+                    {data ? data.cta : "Loading"}
                   </a>
                 </div>
               </div>

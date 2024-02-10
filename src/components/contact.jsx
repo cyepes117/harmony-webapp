@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Contact = (props) => {
-
+  const { data, goToPage } = props;
   return (
     <div>
       <div id="contact">
@@ -10,14 +10,13 @@ export const Contact = (props) => {
             <div className="row">
               <div className="section-title">
                 <h2>Novedades</h2>
-                <p>
-                  Información de valor que debes de conocer.
-                </p>
+                <p>Información de valor que debes de conocer.</p>
                 <a
-                  href="#features"
+                  href="#contact"
                   className="btn btn-tertiary btn-custom btn-lg page-scroll"
+                  onClick={() => goToPage()}
                 >
-                  {props.data ? props.data.cta : "Loading"}
+                  {data ? data.cta : "Loading"}
                 </a>
               </div>
             </div>
@@ -27,7 +26,11 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.instagram : "/"}>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href={data ? data.instagram : "/"}
+                    >
                       <i className="fa fa-instagram"></i>
                     </a>
                   </li>
@@ -39,9 +42,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; 2024 Todos los derechos reservados. Puramente.
-          </p>
+          <p>&copy; 2024 Todos los derechos reservados. Puramente.</p>
         </div>
       </div>
     </div>

@@ -145,7 +145,8 @@ hr {
 }
 .navbar-default .navbar-nav > li > a.btn-custom:hover,
 .navbar-default .navbar-nav > li > a.btn-custom:focus {
-  color: #FAECC9;
+  color: #006866;
+  background-color: #FAECC9;
 }
 .section-title {
   margin-bottom: 70px;
@@ -196,7 +197,7 @@ hr {
 .btn-custom.focus,
 .btn-custom:active,
 .btn-custom.active {
-  color: #fff;
+  /* color: #fff; */
   background-image: none;
   /* background-color: #6372ff; */
 }
