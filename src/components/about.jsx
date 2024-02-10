@@ -1,23 +1,41 @@
 import React from "react";
 
 export const About = (props) => {
+  const { title, paragraph, cta } = props.data || {};
+
+  // Check if props.data is available and not null
+  if (!props.data) {
+    return <div>Loading...</div>;
+  }
+
+  // Replace newline characters ('\n') with JSX line breaks (<br />)
+  const parsedParagraph = paragraph.split("\n").map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+
   return (
     <div id="about">
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-md-6">
-            <img src="img/about.jpg" className="img-responsive" alt="" />
+            <div className="about-img">
+              <img src="img/about.jpg" className="img-responsive" alt="" />
+            </div>
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>{props.data ? props.data.title : "loading..."}</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
+              <h2>{title}</h2>
+              {/* Render the parsed paragraph with JSX line breaks */}
+              <p>{parsedParagraph}</p>
               <a
-                  href="#features"
-                  className="btn btn-secondary btn-custom btn-lg page-scroll"
-                >
-                  {props.data ? props.data.cta : "Loading"}
-                </a>
+                href="#features"
+                className="btn btn-secondary btn-custom btn-lg page-scroll"
+              >
+                {cta}
+              </a>
             </div>
           </div>
         </div>

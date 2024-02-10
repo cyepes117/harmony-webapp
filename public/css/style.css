@@ -253,10 +253,29 @@ a:focus,
   margin: 0 auto;
   margin-bottom: 60px;
 }
-header .intro-text {
-  padding-top: 300px;
-  padding-bottom: 200px;
+header .intro-content {
+  padding-top: 180px;
+  padding-bottom: 140px;
   text-align: center;
+}
+header .intro-img {
+  text-align: center;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .intro-text {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .intro-img img {
+  display: block;
+  margin: 0 auto; /* This will center the image horizontally */
 }
 /* About Section */
 #about {
@@ -296,12 +315,13 @@ header .intro-text {
   font-weight: 300;
   padding-right: 8px;
 }
+#aboout .about-img {
+  text-align: center;
+}
 #about img {
   width: 520px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  display: block;
+  margin: 10px auto 0;
 }
 #about p {
   line-height: 24px;

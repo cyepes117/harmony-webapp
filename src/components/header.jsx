@@ -6,9 +6,9 @@ export const Header = (props) => {
       <div className="intro">
         <div className="overlay">
           <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-md-6 intro-text">
-                <div className="">
+            <div className="row intro-content">
+              <div className="col-xs-12 col-md-6">
+                <div className="intro-text">
                   <h1>{props.data ? props.data.title : "loading..."}</h1>
                   <p>{props.data ? props.data.paragraph : "loading..."}</p>
                   <a
@@ -20,8 +20,10 @@ export const Header = (props) => {
                 </div>
               </div>
 
-              <div className="col-xs-12 col-md-6 intro-text">
-                <img src="img/about.jpg" className="img-responsive" alt="" />
+              <div className="col-xs-12 col-md-6">
+                <div className="intro-img">
+                  <img src="img/about.jpg" className="img-responsive" alt="" />
+                </div>
               </div>
             </div>
           </div>
