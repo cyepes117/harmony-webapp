@@ -10,13 +10,13 @@ export const Services = (props) => {
         </div>
         <div className="row">
           {props.data
-            ? props.data.value.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-3">
+            ? props.data.value.map((service, i) => (
+                <div key={`${service.name}-${i}`} className="col-md-3">
                   <div className="card">
-                    <i className={d.icon}></i>
+                    <img src={`/img/services/${service.icon}`} alt={service.name} />
                     <div className="service-desc">
-                      <h3>{d.name}</h3>
-                      <p>{d.text}</p>
+                      <h3>{service.name}</h3>
+                      <p>{service.text}</p>
                     </div>
                   </div>
                 </div>

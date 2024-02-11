@@ -14,42 +14,42 @@
     "paragraph": "Estos son los servicios para ayudarte en tu bienestar.",
     "value": [
       {
-        "icon": "fa fa-wordpress",
+        "icon": "estres.png",
         "name": "Estrés",
         "text": "Este enemigo, que parece silencioso, ejerce un impacto significativo en tu vida, más allá de lo que puedas percibir. Te proporcionaré herramientas para gestionarlo y encontrar un equilibrio en tu vida."
       },
       {
-        "icon": "fa fa-cart-arrow-down",
+        "icon": "duelo.png",
         "name": "Duelo",
         "text": "El duelo es una experiencia desafiante que todos enfrentamos en algún momento de nuestras vidas. Podemos descubrir juntos cómo afrontarlo, crecer y aprender a lo largo del proceso. Recuerda, no estás solo en este camino."
       },
       {
-        "icon": "fa fa-cloud-download",
+        "icon": "depresion.png",
         "name": "Depresión",
         "text": "La depresión es más común de lo que podrías imaginar, y es importante no minimizar tus emociones. En Puramente, te apoyaremos para enfrentarlas con respeto y comprensión. Lo fundamental es confrontarlas y trabajar en tu bienestar emocional."
       },
       {
-        "icon": "fa fa-language",
+        "icon": "ansiedad.png",
         "name": "Ansiedad",
         "text": "Conecta con tus emociones y aprende a manejarlas. La ansiedad es una experiencia habitual, y es esencial prestar atención a estas señales y abordar la situación con la ayuda de profesionales capacitados."
       },
       {
-        "icon": "fa fa-plane",
+        "icon": "fobia_social.png",
         "name": "Transtorno de ansiedad (fobia social)",
         "text": "En Puramente, entendemos lo desafiante que puede resultar el trastorno de ansiedad social. Nuestra psicóloga, Catalina Fernández, ofrece un enfoque compasivo y efectivo para abordar esta dificultad."
       },
       {
-        "icon": "fa fa-pie-chart",
+        "icon": "postrauma.png",
         "name": "Transtorno de estrés postraumático",
         "text": "Te proporcionamos un enfoque terapéutico especializado para enfrentar este trastorno. A través de terapias personalizadas y técnicas de manejo del trauma, trabajaremos juntos para superar esta situación."
       },
       {
-        "icon": "fa fa-pie-chart",
+        "icon": "dependencia.png",
         "name": "Dependencia emocional",
         "text": "La dependencia emocional puede convertirse en una carga que afecta tu felicidad y autonomía. En Puramente, te ofrecemos apoyo y herramientas para liberarte de esta dependencia y cultivar relaciones más saludables."
       },
       {
-        "icon": "fa fa-pie-chart",
+        "icon": "adaptacion.png",
         "name": "Transtorno de adaptación",
         "text": "Te brindamos orientación y estrategias para afrontar los cambios de manera positiva y construir una vida más equilibrada. En Puramente, estamos aquí para ayudarte en este proceso de transformación."
       }
