@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -8,10 +10,11 @@ html {
   width: 100% !important;
   height: 100% !important;
 }
+h1,
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 h2 {
   text-transform: uppercase;
@@ -19,6 +22,7 @@ h2 {
   font-weight: 800;
   font-size: 36px;
   color: #333;
+  letter-spacing: 1.2px;
 }
 h3 {
   font-size: 20px;
@@ -81,11 +85,23 @@ hr {
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 34px;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+}
+#menu a.navbar-brand span.first{
+  color: #faecc9;
+}
+#menu a.navbar-brand span.second{
+  color: #90C4B7;
+}
+#menu .navbar-brand-image {
+  height: 40px;
+  margin-right: 12px;
 }
 #menu.navbar-default .navbar-nav > li > a.navigator {
   font-family: "Lato", sans-serif;
@@ -104,7 +120,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: #FAECC9;
+  background: #faecc9;
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +141,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: #FAECC9 !important;
+  background: #faecc9 !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -146,7 +162,7 @@ hr {
 .navbar-default .navbar-nav > li > a.btn-custom:hover,
 .navbar-default .navbar-nav > li > a.btn-custom:focus {
   color: #006866;
-  background-color: #FAECC9;
+  background-color: #faecc9;
 }
 .section-title {
   margin-bottom: 70px;
@@ -171,24 +187,24 @@ hr {
   font-size: 18px;
 }
 .btn-secondary {
-  color: #FAECC9 !important;
+  color: #faecc9 !important;
   background-color: #006866 !important;
 }
 .btn-tertiary {
-  color: #FF7169 !important;
-  background-color: #FAECC9 !important;
+  color: #ff7169 !important;
+  background-color: #faecc9 !important;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   color: #006866;
-  background-color: #FAECC9;
-  padding: 14px 34px;
+  background-color: #faecc9;
+  padding: 14px 34px 10px !important;
   letter-spacing: 1px;
   margin: 0;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
-  border-radius: 25px;
+  border-radius: 35px;
   transition: all 0.5s linear;
   border: 0;
 }
@@ -234,13 +250,13 @@ a:focus,
   background: rgba(0, 0, 0, 0.2);
 } */
 .intro h1 {
-  font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+  letter-spacing: 1.2px;
 }
 .intro h1 span {
   font-weight: 800;
@@ -281,7 +297,7 @@ header .intro-img img {
 /* About Section */
 #about {
   padding: 100px 0;
-  background-color: #FAECC9;
+  background-color: #faecc9;
 }
 #about h3 {
   font-size: 22px;
@@ -322,7 +338,7 @@ header .intro-img img {
   flex-direction: column;
 }
 #about img {
-  width: 520px;
+  width: 380px;
   display: block;
   margin: 10px auto 0;
 }
@@ -341,7 +357,7 @@ header .intro-img img {
   margin: 10px 10px 20px;
 }
 #services h2 {
-  color: #FAECC9;
+  color: #faecc9;
 }
 /* #services .section-title h2::after {
   position: absolute;
@@ -363,25 +379,25 @@ header .intro-img img {
   height: 120px;
   padding: 40px 0;
   border-radius: 50%;
-  color: #FF7169;
+  color: #ff7169;
 }
 #services h3 {
   font-weight: 500;
   padding: 5px 0;
-  color: #FAECC9;
+  color: #faecc9;
   font-size: 22px;
 }
 #services p {
-  color: #FAECC9;
+  color: #faecc9;
 }
 #services .row > div {
   padding: 10px 10px;
 }
 #services .card {
   border-radius: 20px;
-  background-color: #FAECC9;
+  background-color: #faecc9;
   padding: 0 10px;
-  height: 400px; 
+  height: 400px;
 }
 #services .row h3 {
   font-weight: 500;
@@ -506,7 +522,7 @@ header .intro-img img {
 /* Contact Section */
 #contact {
   padding: 100px 0 0px;
-  background: #FF7169;
+  background: #ff7169;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
 }
@@ -625,16 +641,16 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #FF7169;
+  color: #ff7169;
   background: #fff;
 }
 /* Footer Section*/
 #footer {
-  background: #FF7169;
+  background: #ff7169;
   padding: 30px 0;
 }
 #footer p {
-  color: #FAECC9;
+  color: #faecc9;
   font-size: 14px;
 }
 #footer a {
