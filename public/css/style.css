@@ -84,7 +84,6 @@ hr {
   border-color: rgba(231, 231, 231, 0);
 }
 #menu.navbar-colored {
-  background-color: #006866 !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
