@@ -9,6 +9,9 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+  padding-top: constant(safe-area-inset-top); /* iOS 11.0+ */
+  padding-top: env(safe-area-inset-top); /* iOS 11.2+ */
+  background-color: #006866;
 }
 h1,
 h2,
