@@ -40,7 +40,13 @@ h5 {
   line-height: 20px;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  p {
+    /* font-size: 16px; */
+  }
 }
 p.intro {
   margin: 12px 0 0;
@@ -268,7 +274,7 @@ a:focus,
 }
 .intro h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 54px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -281,7 +287,7 @@ a:focus,
 }
 .intro p {
   color: #fff;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
@@ -360,7 +366,7 @@ header .intro-img img {
   margin: 10px auto 0;
 }
 #about p {
-  line-height: 24px;
+  line-height: 28px;
   margin: 30px 0;
   color: #006866;
 }
@@ -403,6 +409,7 @@ header .intro-img img {
 }
 #services .row p {
   color: #006866;
+  font-size: 15px;
 }
 #services .service-desc {
   margin-top: 0px;
@@ -568,7 +575,7 @@ header .intro-img img {
   margin-bottom: 40px;
 }
 #contact .section-title p {
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 #contact h2 {
   color: #fff;
