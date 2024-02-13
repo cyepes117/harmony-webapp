@@ -4,15 +4,18 @@ export const Navigation = (props) => {
   const { goToPage } = props;
   const [scrollOpacity, setScrollOpacity] = useState(0);
   const [isMaxScroll, setIsMaxScroll] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const maxScroll = 100; // Maximum scroll position where opacity is 1
-      const opacity = Math.min(scrollY / maxScroll, 1); // Calculate opacity
+      const maxScroll = 100; 
 
-      setScrollOpacity(opacity);
-      setIsMaxScroll(scrollY >= maxScroll);
+      if (!isMenuOpen) {
+        const opacity = Math.min(scrollY / maxScroll, 1);
+        setScrollOpacity(opacity);
+        setIsMaxScroll(scrollY >= maxScroll);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,7 +23,21 @@ export const Navigation = (props) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array ensures the effect only runs once on mount
+  }, [isMenuOpen]);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+
+    if (!isMenuOpen) {
+      setScrollOpacity(1);
+    } else {
+      const scrollY = window.scrollY;
+      const maxScroll = 100; 
+      const opacity = Math.min(scrollY / maxScroll, 1);
+      setScrollOpacity(opacity);
+      setIsMaxScroll(scrollY >= maxScroll);
+    }
+  };
 
   return (
     <nav
@@ -35,6 +52,7 @@ export const Navigation = (props) => {
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
+            onClick={handleMenuToggle} 
           >
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
