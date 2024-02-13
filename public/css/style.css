@@ -155,11 +155,11 @@ a:focus,
   display: flex;
   align-items: center;
 }
-#menu a.navbar-brand span.first{
+#menu a.navbar-brand span.first {
   color: #faecc9;
 }
-#menu a.navbar-brand span.second{
-  color: #90C4B7;
+#menu a.navbar-brand span.second {
+  color: #90c4b7;
 }
 #menu .navbar-brand-image {
   height: 40px;
@@ -370,9 +370,6 @@ header .intro-img img {
   background: #006866;
   color: #fff;
 }
-#services .service-desc {
-  margin: 10px 10px 20px;
-}
 #services h2 {
   color: #faecc9;
 }
@@ -390,7 +387,7 @@ header .intro-img img {
   color: #faecc9;
 }
 #services .row > div {
-  padding: 10px 10px;
+  padding: 10px;
 }
 #services .card {
   border-radius: 20px;
@@ -410,6 +407,48 @@ header .intro-img img {
 #services .service-desc {
   margin-top: 0px;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  #services .row > div {
+    padding: 20px;
+  }
+  #services .card {
+    border-radius: 20px;
+    background-color: #faecc9;
+    padding: 0 10px 30px;
+    height: auto;
+  }
+  #services .card img {
+    width: 100px;
+    padding: 30px 0;
+  }
+  #services .row h3 {
+    font-weight: 500;
+    padding: 5px 0;
+    font-size: 32px;
+    margin-top: 0px;
+    color: #006866;
+  }
+  #services .service-desc {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #services .row p{
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #services .card img {
+    width: 90px;
+    padding: 30px 0;
+  }
+  #services .row h3 {
+    font-weight: 500;
+    padding: 5px 0;
+    font-size: 30px;
+    margin-top: 0px;
+    color: #006866;
+  }
 }
 /* Portfolio Section */
 #portfolio {
